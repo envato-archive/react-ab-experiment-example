@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "babel src --out-dir lib",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "engines": {
+    "node": "6.10.x"
   },
   "repository": "git+https://github.com/envato/react-ab-experiment-example.git",
   "author": "toan@graduate.uwa.edu.au",
