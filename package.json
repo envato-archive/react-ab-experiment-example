@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "yarn run build"
+    "heroku-postbuild": "heroku-nextjs-build"
   },
   "engines": {
     "node": "6.10.x"
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/envato/react-ab-experiment-example#readme",
   "dependencies": {
+    "@mars/heroku-nextjs-build": "^2.0.0",
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
