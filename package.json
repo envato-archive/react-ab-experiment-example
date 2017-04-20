@@ -27,7 +27,7 @@
     "next": "^2.1.1",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
-    "react-ab-experiment": "^1.2.3",
+    "react-ab-experiment": "^1.2.7",
     "react-dom": "^15.5.4",
     "whatwg-fetch": "^2.0.3"
   }

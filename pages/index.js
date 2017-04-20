@@ -1,5 +1,5 @@
 import React from 'react'
-import {Experiment, Variant, Loading} from 'react-ab-experiment'
+import {Experiment, Variant} from 'react-ab-experiment'
 import 'whatwg-fetch'
 
 class ReactABExperimentDemo extends React.Component {
@@ -25,10 +25,7 @@ class ReactABExperimentDemo extends React.Component {
 
   render () {
     return(
-      <Experiment id="7FHd06ZdQ7iF_uU5QvfXTg" onEnrolment={this.onEnrolment} >
-        <Loading>
-          <div> LOADING..... </div>
-        </Loading>
+      <Experiment id="7FHd06ZdQ7iF_uU5QvfXTg" onEnrolment={this.onEnrolment} fetchVariantName={this.fetchVariantName} >
         <Variant name={0}>
           <div>Variant 0</div>
         </Variant>
