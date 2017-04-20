@@ -2598,9 +2598,9 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-ab-experiment@^1.2.7:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/react-ab-experiment/-/react-ab-experiment-1.2.7.tgz#322398d434a6444eea2d4eae0610deaa0bb046a9"
+react-ab-experiment@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/react-ab-experiment/-/react-ab-experiment-1.2.8.tgz#0cdd5666ed03df59526bbfa89f5c888bc23ad730"
   dependencies:
     prop-types "^15.5.7"
 

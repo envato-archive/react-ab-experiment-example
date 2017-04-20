@@ -2,6 +2,11 @@ import React from 'react'
 import {Experiment, Variant} from 'react-ab-experiment'
 import 'whatwg-fetch'
 
+const cache = {
+  get: (key) => window.localStorage.getItem(key),
+  set: (key, value) => window.localStorage.setItem(key, value)
+}
+
 class ReactABExperimentDemo extends React.Component {
   onEnrolment (experimentId, variantName) {
     // Send data to ga
@@ -15,17 +20,9 @@ class ReactABExperimentDemo extends React.Component {
       .then(response => response.variant)
   }
 
-  cacheGet(experimentKey) {
-    return localStorage.getItem(experimentKey)
-  }
-
-  cacheSet (experimentKey, variantName) {
-      return localStorage.setItem(experimentKey, variantName)
-  }
-
   render () {
     return(
-      <Experiment id="7FHd06ZdQ7iF_uU5QvfXTg" onEnrolment={this.onEnrolment} fetchVariantName={this.fetchVariantName} >
+      <Experiment id="7FHd06ZdQ7iF_uU5QvfXTg" onEnrolment={this.onEnrolment} fetchVariantName={this.fetchVariantName} cache={cache}>
         <Variant name={0}>
           <div>Variant 0</div>
         </Variant>
