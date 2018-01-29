@@ -9,9 +9,6 @@
     "start": "next start -p $PORT",
     "heroku-postbuild": "heroku-nextjs-build"
   },
-  "engines": {
-    "node": "6.10.x"
-  },
   "repository": "git+https://github.com/envato/react-ab-experiment-example.git",
   "author": "toan@graduate.uwa.edu.au",
   "license": "MIT",
